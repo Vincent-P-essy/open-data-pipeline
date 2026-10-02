@@ -1,0 +1,12 @@
+[
+  {
+    "command": "python3 pipeline.py examples/energy.csv output/energy.json",
+    "exit": 0,
+    "output": "Validated 4 records. Total: 423.50 MWh.\nPublished output/energy.json\n"
+  },
+  {
+    "command": "python3 -m unittest discover -s tests -v",
+    "exit": 0,
+    "output": "test_bad_date_rejected (test_pipeline.PipelineTests.test_bad_date_rejected) ... ok\ntest_decimal_total (test_pipeline.PipelineTests.test_decimal_total) ... ok\ntest_duplicates_rejected (test_pipeline.PipelineTests.test_duplicates_rejected) ... ok\ntest_failed_validation_preserves_output (test_pipeline.PipelineTests.test_failed_validation_preserves_output) ... ok\ntest_nonfinite_rejected (test_pipeline.PipelineTests.test_nonfinite_rejected) ... ok\ntest_valid_dataset_published (test_pipeline.PipelineTests.test_valid_dataset_published) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.003s\n\nOK\n"
+  }
+]
